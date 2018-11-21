@@ -1,0 +1,19 @@
+
+{% extends('base.html.twig')%}
+
+{% block stylesheet %}
+
+{% endblock %}
+
+{% block body %}
+Listado de usuarios
+<ul>
+        <li>{{ VIP.id }}</li>
+        <li>{{ VIP.nombre }}</li>
+        <li>{{ VIP.apellidos }}</li>
+        <li>{{ VIP.edad }}</li>
+        <li>{{ VIP.DNI }}</li>
+        <li>{{ VIP.cargo }}</li>
+        <li>{{ VIP.telefono }}</li>
+</ul>
+{% endblock %}

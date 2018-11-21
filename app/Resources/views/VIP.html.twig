@@ -1,0 +1,27 @@
+
+{% extends('base.html.twig')%}
+
+{% block stylesheet %}
+
+{% endblock %}
+
+{% block body %}
+
+<table>
+
+    <tr>
+        <td>ID</td>
+        <td>Nombre</td>
+    </tr>
+
+<ul id="VIP">
+    {% for V in VIP %}
+    <tr>
+        <td><li>{{ V.id }}</li></td>
+        <td><li>{{ V.nombre }}</li></td>
+        </tr>
+    {% endfor %}
+</ul>
+
+</table>
+{% endblock %}
